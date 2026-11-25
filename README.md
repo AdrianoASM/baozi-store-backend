@@ -8,7 +8,7 @@ O projeto usa Java 17, Spring Boot 3.2.0, Spring Data JPA e banco H2. Cada pedid
 
 ## Executar
 
-Com JDK 17 ou 21 e Maven 3.9 instalados, abra um terminal na pasta do projeto:
+Com JDK 17 ou 21 e Maven 3.9 instalados, deve ser aberto um terminal na pasta do projeto:
 
 ```shell
 mvn test
