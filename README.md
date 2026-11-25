@@ -44,13 +44,13 @@ Os POSTs recebem JSON com `Content-Type: application/json`. Exemplos:
 {"clienteId":1,"produtoId":1,"quantidade":3}
 ```
 
-Use os IDs retornados pelo cadastro. As respostas são 201 ao criar, 200 ao consultar e 204 ao excluir. Dados inválidos retornam 400; registros inexistentes, 404; conflitos, 409. PUT é opcional no trabalho e não foi implementado.
+Usa os IDs retornados pelo cadastro. As respostas são 201 ao criar, 200 ao consultar e 204 ao excluir. Dados inválidos retornam 400; registros inexistentes, 404; conflitos, 409. PUT é opcional no trabalho e não foi implementado.
 
 ## Banco e regras
 
 O H2 salva os dados em `data/baozi`, relativo à pasta de execução. O console fica em `/h2-console`: URL `jdbc:h2:file:./data/baozi`, usuário `sa`, senha `senha123`. A configuração é para uso local e não inclui autenticação.
 
-O campo `estoque` indica disponibilidade, sem controlar o número de unidades. Não é possível criar pedido de produto indisponível nem excluir cliente ou produto com pedidos vinculados. Exclua primeiro o pedido.
+O campo `estoque` indica disponibilidade, sem controlar o número de unidades. Não é possível criar pedido de produto indisponível, nem excluir cliente ou produto com pedidos vinculados. Deve excluir o primeiro o pedido.
 
 ## Organização e testes
 
