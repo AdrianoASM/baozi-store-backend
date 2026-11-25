@@ -1,6 +1,7 @@
 # Baozi Store
 
 Trabalho de Desenvolvimento Web Back End de Adriano Araújo dos Santos Mendonça RU: 5267544
+
 API REST de uma loja de pão chinês, com cadastro de clientes, produtos e pedidos.
 
 O projeto usa Java 17, Spring Boot 3.2.0, Spring Data JPA e banco H2. Cada pedido contém um cliente, um produto e uma quantidade.
